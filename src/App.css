@@ -493,47 +493,66 @@ body {
   margin: 0 auto;
 }
 
-/* ================= IMPACT SECTION (HOME) ================= */
-.impact-section {
-  padding: 5rem 2rem;
+/* ================= WHY SECTION (HOME) ================= */
+.why-section {
+  background-color: #fafafa;
+  padding: 6rem 2rem;
   text-align: center;
 }
 
-.impact-section h2 {
+.why-section h2 {
   font-family: "Archivo Black", sans-serif;
   font-size: 2.5rem;
   margin-bottom: 4rem;
 }
 
-.impact-grid {
+.why-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 5rem;
-  max-width: 1400px;
+  gap: 3rem;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.impact-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.2rem;
+.why-box {
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.impact-icon {
-  font-size: 3rem;
-  color: #f28c28;
+.why-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
 
-.impact-card h3 {
+.why-box h3 {
   font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #333;
 }
 
-.impact-card p {
-  font-size: 1.3rem;
-  line-height: 1.72;
-  max-width: 320px;
+.why-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
 }
+
+.why-icon {
+  font-size: 2.8rem;
+  color: #f28c28;
+  margin-bottom: 1.5rem;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ================= ORGANIZATION SECTION ================= */
 .organization-section {
   padding: 6rem 2rem;
@@ -593,6 +612,90 @@ body {
 .organization-card ul li {
   margin-bottom: 0.8rem; /* more spacing between items */
 }
+/* ================= ABOUT PAGE ================= */
+.about-page {
+  background-color: #fff;
+}
+
+/* HERO */
+.about-hero {
+  padding: 6rem 2rem 5rem;
+  text-align: center;
+  background-color: #fff4e6;
+}
+
+.about-hero h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 3rem;
+  color: #d97706;
+  margin-bottom: 1.2rem;
+}
+
+.about-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* STORY */
+.about-story {
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-story-text h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.about-story-image img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+.about-icon {
+  background-color: #fff4e6;
+  padding: 0.9rem;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* CLOSING */
+.about-closing {
+  padding: 4rem 2rem 5rem;
+  text-align: center;
+}
+
+.about-closing p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about-story {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
 
 
 /* ================= RESPONSIVE ADJUSTMENTS ================= */
@@ -633,32 +736,4 @@ body {
   .organization-card ul {
     font-size: 1rem;
   }
-}
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.footer p {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-}
-
-.footer .socials {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.footer .socials a {
-  color: white;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-
-.footer .socials a:hover {
-  color: #f28c28;
 }

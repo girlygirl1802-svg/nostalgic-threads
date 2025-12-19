@@ -1,6 +1,7 @@
 import heroImage from "../assets/hero.jpeg";
 import { Link } from "react-router-dom";
-import { FaRecycle, FaHandsHelping, FaGlobeAmericas } from "react-icons/fa";
+import { FaTags, FaUsers, FaLeaf } from "react-icons/fa";
+
 
 function Home() {
   const scrollToMission = () => {
@@ -35,41 +36,40 @@ function Home() {
           environmental sustainability. We provide affordable goods to the community while
           helping reduce waste and make a positive impact on the planet.
         </p>
-      </section>
+      </section>{/* WHY CHOOSE US */}
+<section className="why-section">
+  <h2>Why Choose Nostalgic Threads</h2>
 
-      {/* MAKING REAL IMPACT */}
-      <section className="impact-section">
-        <h2>Making Real Impact</h2>
+  <div className="why-grid">
+    <div className="why-box">
+      <FaTags className="why-icon" />
+      <h3>Affordable Finds</h3>
+      <p>
+        We offer quality second-hand items at prices that make sustainability
+        accessible to everyone.
+      </p>
+    </div>
 
-        <div className="impact-grid">
-          <div className="impact-card">
-            <FaRecycle className="impact-icon" />
-            <h3>Reduces Textile Waste</h3>
-            <p>
-              By donating gently used clothing, we help reduce textile waste
-              and extend the life of garments, lowering environmental impact.
-            </p>
-          </div>
+    <div className="why-box">
+      <FaUsers className="why-icon" />
+      <h3>Community Driven</h3>
+      <p>
+        Every donation and purchase supports local families and strengthens
+        community connections.
+      </p>
+    </div>
 
-          <div className="impact-card">
-            <FaHandsHelping className="impact-icon" />
-            <h3>Supports the Community</h3>
-            <p>
-              Donations make affordable clothing accessible to families and
-              individuals, while supporting local initiatives and programs.
-            </p>
-          </div>
+    <div className="why-box">
+      <FaLeaf className="why-icon" />
+      <h3>Purposeful Shopping</h3>
+      <p>
+        Shopping with us means making conscious choices that reduce waste
+        and give items a second life.
+      </p>
+    </div>
+  </div>
+</section>
 
-          <div className="impact-card">
-            <FaGlobeAmericas className="impact-icon" />
-            <h3>Encourages Sustainable Choices</h3>
-            <p>
-              Choosing to donate instead of discard raises awareness about
-              ethical fashion and sustainable consumption.
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* ORGANIZATION & ACHIEVEMENTS */}
       <section className="organization-section">
